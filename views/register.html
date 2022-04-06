@@ -21,5 +21,84 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section>
+            <h1>Bienvenido</h1>
+            <form action="">
+                <div class="form-box">
+                    <label for="nombre">Nombre</label>
+                    <!-- name es lo que va a capturar cuando se valide  -->
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribí tu nombre">
+                    <span>Obligatorio</span>
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Escrbí tu email">
+                    <span>Obligatorio</span>
+                </div>
+                <div class="form-box">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="contraseña" placeholder="Escribí tu contraseña">
+                    <span>Obligatorio</span>
+                </div>
+                <div>
+                    <h4>País de nacimiento</h4>
+                    <div class="form-box">
+                        <select name="pais" id="pais">
+                            <!-- value es el que va va viajar al back 
+                            hidden selected desaparece de las opciones porque no va a enviar ningún valor-->
+                            <option value="" hidden selected>Por favor elegí uno</option>
+                            <option value="ar">Argentina</option>
+                            <option value="br">Brasil</option>
+                            <option value="uy">Uruguay</option>
+                        </select>
+                        <span>Obligatorio</span>
+                    </div> 
+                </div>
+                <div>
+                    <h4>Género</h4>
+                    <div>
+                        <input type="radio" name="genero" id="masculino" value="m">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" id="femenino" value="f">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="genero" id="tenis" value="n">
+                        <label for="nodice">Prefiero no decirlo</label>
+                    </div>
+                </div>
+                <div>
+                    <h4>Hobbies</h4>
+                    <div>
+                        <input type="checkbox" name="hobbies" id="guitarra" value="g">
+                        <label for="guitarra">Guitarra</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" id="futbol" value="f">
+                        <label for="futbol">Fútbol</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" id="tenis" value="t">
+                        <label for="tenis">Tenis</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobbies" id="programacion" value="p">
+                        <label for="programacion">Programción</label>
+                    </div>
+                </div>
+                <div>
+                    <h4>Dejanos tus comentarios</h4>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" style="resize: none;"></textarea>
+                </div>
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos">Términos y condiciones</label>
+                <button type="submit">Registrarme</button>
+                <button type="button">Cancelar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
